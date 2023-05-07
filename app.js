@@ -39,7 +39,7 @@ window.onload = function () {
         if (clicked == false) {
           clicked = true;
           let nr = ++this.id;
-          fetch("http://swapi.dev/api/planets/" + nr).then((response) =>
+          fetch("https://swapi.dev/api/planets/" + nr).then((response) =>
             response.json().then((data) => {
               planetName.innerHTML = data["name"];
               planetRot.innerHTML = data["rotation_period"];
