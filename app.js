@@ -57,7 +57,7 @@ window.onload = function () {
     }
   }
   let universe = document.querySelector(".planets");
-  fetch("http://swapi.dev/api/planets/")
+  fetch("https://swapi.dev/api/planets/")
     .then((response) => response.json())
     .then((data) => {
       let count = Number(data["count"]);
